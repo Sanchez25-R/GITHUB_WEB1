@@ -33,7 +33,6 @@ library(agricolae)
 
 ## DCA 
 
-
 Factor → dosis de fertilización nitrogenada (kg/ha) 0 ~ testigo 50 100 Diseño: DCA Repeticiones: 5 UE → 3 dosis x 5 rep = 15
 
 ```{r}
@@ -52,14 +51,12 @@ diseño <- design.crd(
 print(diseño)
 ```
 
-
 ```{r}
 # Exportación de la tabla del diseño
 diseño$book
 ```
 
-
-## DBCA en factorial
+## DBCA en factorial 
 
 Factor 1 → dosis de fertilización nitrogenada (Kg/ha) Factor 2 → cultivares papa peruanita canchan Diseño: DBCA Repeticiones: 4 UE → 3 dosis x 2 cultivos x 4 rep = 24
 
@@ -69,7 +66,6 @@ outdesign <-design.ab(trt, r=3, serie=2)
 book<-outdesign$book
 book
 ```
-
 
 
 
